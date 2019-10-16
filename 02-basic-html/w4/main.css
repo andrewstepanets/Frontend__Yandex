@@ -1,0 +1,111 @@
+@font-face {
+    font-family:"UnifrakturCook";
+    src: url(fonts/UnifrakturCook/UnifrakturCook-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family:"Space Mono";
+    src: url(fonts/Space_Mono/SpaceMono-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family:"Six Caps";
+    src: url(fonts/Six_Caps/SixCaps-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family:"Racing Sans One";
+    src: url(fonts/Racing_Sans_One/RacingSansOne-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family:"Farsan";
+    src: url(fonts/Farsan/Farsan-Regular.ttf) format("truetype");
+}
+
+.header__info {
+    text-align: center;
+}
+.header__weather-title {
+    font: bold 117% 'Space Mono';
+    text-align: center;
+}
+.header__weather-text {
+    font-size: 80%;
+    text-align: justify;
+    line-height: 110%;
+}
+.header__title {
+    font: 90px 'UnifrakturCook';
+    text-align: center;
+}
+.sub-header__copyright {
+    font-size: 60%;
+}
+.content {
+    font-size: 80%;
+    text-align: justify;
+}
+p {
+    margin-top: 0; 
+    margin-bottom: 0; 
+    text-indent: 2em;
+}
+
+.article__title {
+       font: bold 320% 'Six Caps';
+}
+.article__add-text {
+       font-size: 80%;
+       font-style: oblique;
+       text-indent: 1.5em;
+       text-align: center;
+}
+.article__author {
+       text-align: center;
+       font-weight: bold;
+       font-size: 80%;
+       column-span: all;
+}
+.article__continue {
+       font-size: 80%;
+       text-align: center;
+       font-style: oblique;
+       column-span: all;
+}
+.article__subtitle {
+       font: bold 117% 'Times New Roman';
+       text-align: center;
+}
+.article__title.article__title_font_racing {
+       font: bold italic 200% 'Racing Sans One';
+       margin: 0;
+       text-indent: 0;
+       text-align: left;
+       column-span: all;
+}
+.article__title.article__title_font_farsan {
+       font: bold italic 230% 'Farsan', cursive;
+       margin: 0;
+       text-indent: 0;
+       column-span: all;
+       text-align: left;
+}
+.article__image-caption {
+     font-size: 0.8rem;
+     text-decoration: underline;
+}
+.article.article_columns_two {
+       column-count: 2;
+       column-gap: 15px;
+}
+.main-photo__title {
+       font-weight: bold;
+}
+.main-photo__desc {
+       font-size: 80%;
+}
+.main-photo__caption {
+       text-align: right;
+       text-transform: uppercase;
+       font-size: 0.7rem;
+}
+.line.line_type_short {
+       column-span: all;
+}
