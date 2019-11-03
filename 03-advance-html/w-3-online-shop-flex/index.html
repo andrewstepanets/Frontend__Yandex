@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Бабуленькины котятки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Бабуленькины кошечки</h1>
+    </header>
+    <input class="filter__control hidden" type="checkbox" name="cat-breeds" id="breed-01">
+    <input class="filter__control hidden" type="checkbox" name="cat-breeds" id="breed-02">
+    <input class="filter__control hidden" type="checkbox" name="cat-breeds" id="breed-03">
+    <input class="filter__control hidden" type="checkbox" name="cat-breeds" id="breed-04">
+    <input class="filter__control hidden" type="checkbox" name="cat-breeds" id="breed-05">
+    <input class="filter__control hidden" type="checkbox" name="cat-breeds" id="breed-06">
+    
+    <main class="main">
+        <aside class="filter">
+            <ul class="filter__ul">
+                <li class="filter__li">
+                    <label class="filter__breed-label" for="breed-01">Порода 1</label>
+                </li>
+                <li class="filter__li">
+                    <label class="filter__breed-label" for="breed-02">Порода 2</label>
+                </li>
+                <li class="filter__li">
+                    <label class="filter__breed-label" for="breed-03">Порода 3</label>
+                </li>
+                <li class="filter__li">
+                    <label class="filter__breed-label" for="breed-04">Порода 4</label>
+                </li>
+                <li class="filter__li">
+                    <label class="filter__breed-label" for="breed-05">Порода 5</label>
+                </li>
+                <li class="filter__li">
+                    <label class="filter__breed-label" for="breed-06">Порода 6</label>
+                </li>
+            </ul>
+        </aside>
+    
+        <div class="gallery">
+            <figure class="gallery__card card breed-03" data-caption="Абиссинская">
+                <img class="card__img" src="./img/abissin.jpg" alt="Абиссинская">
+            </figure>
+    
+            <figure class="gallery__card card breed-06" data-caption="Американский Керл">
+                <img class="card__img" src="./img/americanKerl.jpg" alt="Американский Керл">
+            </figure>
+    
+            <figure class="gallery__card card breed-01" data-caption="Бомбейская">
+                <img class="card__img" src="./img/bombay.jpg" alt="Бомбейская">
+            </figure>
+    
+            <figure class="gallery__card card breed-01" data-caption="Бурманская">
+                <img class="card__img" src="./img/burman.jpg" alt="Бурманская">
+            </figure>
+    
+            <figure class="gallery__card card breed-05" data-caption="Египетская мау">
+                <img class="card__img" src="./img/egyptmau.jpg" alt="Египетская мау">
+            </figure>
+    
+            <figure class="gallery__card card breed-01" data-caption="Майнкун">
+                <img class="card__img" src="./img/mainkun.jpg" alt="Майнкун">
+            </figure>
+    
+            <figure class="gallery__card card breed-03" data-caption="Норвежская">
+                <img class="card__img" src="./img/norvegian.jpg" alt="Норвежская">
+            </figure>
+    
+            <figure class="gallery__card card breed-02" data-caption="Орегон Рекс">
+                <img class="card__img" src="./img/oregonRex.jpg" alt="Орегон Рекс">
+            </figure>
+    
+            <figure class="gallery__card card breed-05" data-caption="Персидская">
+                <img class="card__img" src="./img/Persian.jpg" alt="Персидская">
+            </figure>
+    
+            <figure class="gallery__card card breed-03" data-caption="Сиамская">
+                <img class="card__img" src="./img/siam.jpg" alt="Сиамская">
+            </figure>
+    
+            <figure class="gallery__card card breed-06" data-caption="Сибирская">
+                <img class="card__img" src="./img/siberia.jpg" alt="Сибирская">
+            </figure>
+    
+            <figure class="gallery__card card breed-04" data-caption="Тонкинез">
+                <img class="card__img" src="./img/tonkinez.jpg" alt="Тонкинез">
+            </figure>
+    
+            <figure class="gallery__card card breed-02" data-caption="Бенгальская">
+                <img class="card__img" src="./img/bengal.jpg" alt="Бенгальская">
+            </figure>
+    
+        </div>
+    
+        <aside class="rating">
+            <h3 class="rating__title">Рейтинг</h3>
+    
+            <label for="ratingCheckbox">по убыванию</label>
+            <input type="checkbox" id="ratingCheckbox">
+    
+            <section class="rating__section" data-rate="8">
+                <h4 class="rating__caption">Американский Керл</h4>
+                <span class="rating__progress" data-rate="8"></span>
+            </section>
+    
+            <section class="rating__section" data-rate="7">
+                <h4 class="rating__caption">Абиссинская</h4>
+                <span class="rating__progress" data-rate="7"></span>
+            </section>
+    
+            <section class="rating__section" data-rate="10">
+                <h4 class="rating__caption">Бомбейская</h4>
+                <span class="rating__progress" data-rate="10"></span>
+            </section>
+    
+            <section class="rating__section" data-rate="6">
+                <h4 class="rating__caption">Бурманская</h4>
+                <span class="rating__progress" data-rate="6"></span>
+            </section>
+    
+            <section class="rating__section" data-rate="9">
+                <h4 class="rating__caption">Египетская мау</h4>
+                <span class="rating__progress" data-rate="9"></span>
+            </section>
+    
+            <section class="rating__section" data-rate="10">
+                <h4 class="rating__caption">Майнкун</h4>
+                <span class="rating__progress" data-rate="10"></span>
+            </section>
+    
+            <section class="rating__section" data-rate="8">
+                <h4 class="rating__caption">Тонкинез</h4>
+                <span class="rating__progress" data-rate="8"></span>
+            </section>
+        </aside>
+    
+    </main>
+    <footer class="footer">
+        <small class="footer__copyright">&copy; Бабуленькины кошечки, 2019</small>
+        <address class="footer__address">Наш адрес: улица Котова, д.5</address>
+    </footer>
+    
+</body>
+</html>
