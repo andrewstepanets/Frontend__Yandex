@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1020px;
+    margin: 0 auto;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 984px;
+    margin: 18px;
+    height: 1614px;
+    background: #f6f5f3;
+    display: grid;
+    grid-template:
+    ". header ." 85px
+    ". main ." 1279px
+    ". footer ." 250px
+    / 12px 960px 12px;
+}
+
+header {
+    position: relative;
+    grid-area: header;
+}
+
+.button_left,
+.button_play,
+.button_right {
+    border-radius: 100%;
+    background: #ffdb4a;
+    border: 0px;
+}
+
+.button_left:hover,
+.button_play:hover,
+.button_right:hover {
+    opacity: .7;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo__bg {
+    position: absolute;
+    right: 62px;
+}
+
+.logo__yandex {
+    position: absolute;
+    right: 96.5px;
+    top: 27px;
+}
+
+.content {
+    grid-area: main;
+}
+
+.slider {
+    display: grid;
+    grid-template: 
+    "button-left text button-right" 280px
+    ". cars ." 122px
+    / 160px 640px 160px;
+}
+
+.slider__text {
+    grid-area: text;
+    align-self: end;
+    line-height: 1.2em;
+    font-size: 36px;
+    padding: 0 0 2px 10px;
+    text-indent: -17px;
+}
+.slider__text q {
+    quotes: "\00ab" "\00bb";
+}
+
+.slider__img {
+    grid-area: cars;
+    justify-self: center;
+}
+
+.button-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    box-shadow: 1px 1px 2px #fc8c4b;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+i {
+    align-self: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #fc8c4b;
+}
+
+.button_left i {
+    font-size: 200%;
+    margin-right: 5px;
+}
+
+.button_right i {
+    font-size: 200%;
+    margin-left: 5px;
+}
+
+.button_left {
+    grid-area: button-left;
+}
+
+.button_right {
+    grid-area: button-right;
+}
+
+.video {
+    display: flex;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__snapshot {
+    position: relative;
+}
+
+.button_play {
+    width: 125px;
+    height: 125px;
+    box-shadow: 1px 1px 3px #6c3026;
+    position: absolute;
+    top: 120px;
+    left: 255px;
+}
+
+.button_play i {
+    font-size: 350%;
+    margin-left: 10px;
+}
+
+.video-title-bg {
+    position: absolute;
+    height: 49px;
+    width: 640px;
+    top: 0;
+    background: rgba(41, 54, 60, .7);
+}
+
+.video-title {
+    position: absolute;
+    font-size: 29px;
+    color: #fff;
+    top: 8px;
+    left: 171px;
+}
+
+.benefits__header {
+    display: block;
+    height: 50px;
+    padding: 3px 0 0 5px;
+    font-size: 47px;
+    text-align: center;
+    letter-spacing: .008em;
+}
+
+.benefits__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.benefits__list_item {
+    width: 240px;
+    height: 240px;
+}
+
+.benefits__list__icon {
+    position: relative;
+    height: 75px;
+}
+
+.benefits__list__icon.catalogue img {
+    position: absolute;
+    top: 3px;
+    left: 31px;
+}
+
+.benefits__list__icon.magnifying_glass img {
+    position: absolute;
+    left: 29px;
+}
+
+.benefits__list__icon.intersections img {
+    position: absolute;
+    top: 1px;
+    left: 23px;
+}
+
+.benefits__list__icon.search_field img {
+    position: absolute;
+    top: 9px;
+    left: 29px;
+}
+
+.benefits__list__header {
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 15px 0 17px 28px;
+}
+
+.benefits__list__info {
+    font-size: 16px;
+    margin: 0 -10px 0 28px;
+    line-height: 1.2em;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer span {
+    font-size: 42px;
+    text-indent: 50px;
+    letter-spacing: 0em;
+    margin-bottom: 65px;
+}
+
+.try-it {
+    display: block;
+    user-select: none;
+    width: 318px;
+    height: 70px;
+    background-image: linear-gradient(180deg, #ffdf24, #ffdb01);
+    border-radius: 8px;
+    border: 0px solid transparent;
+    font-size: 36px;
+}
+
+.try-it:hover {
+    background-image: linear-gradient(180deg, #ffe86a, #ffe12f);
+}
