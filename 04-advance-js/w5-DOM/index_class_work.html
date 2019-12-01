@@ -17,6 +17,20 @@
         form.getAttribute('action');
         console.log(form.getAttribute('action'));
         console.log(form.dataset.form);
+
+        // Add function working with classes
+
+        form.classList.add('login-form');
+        console.log(form.classList.item(0));
+        console.log(form.classList.item(1));
+        console.log(form.classList.item(2));
+        console.log(form.classList.contains('login-form'));
+        form.remove('login-form');
+        
+        for (let index = 0; index < 2; index++) {
+            console.log(form.classList.item(index));
+            
+        }
     </script>
 </body>
 </html>
